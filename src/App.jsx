@@ -1,5 +1,7 @@
 import TelepharmacyChat from './components/TelepharmacyChat';
+import { ArchitectureDebug } from './components/ArchitectureDebug';
 import TimesheetDownload from './components/TimesheetDownload';
+import { ArchitectureDebug } from './components/ArchitectureDebug';
 
 export default function App() {
   return (
