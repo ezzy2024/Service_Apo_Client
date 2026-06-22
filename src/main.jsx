@@ -1,18 +1,10 @@
-import * as Sentry from '@sentry/react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App.jsx';
+import './index.css';
 
-Sentry.init({
-  dsn: import.meta.env.VITE_SENTRY_DSN || '',
-  integrations: [],
-  tracesSampleRate: import.meta.env.MODE === 'production' ? 0.2 : 1.0,
-});
-
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
-)
+  </React.StrictMode>
+);
